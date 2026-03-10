@@ -1,0 +1,26 @@
+.configuration-screen {
+}
+
+.summary {
+  background-color: #e7f3ff;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border-left: 4px solid #007bff;
+}
+
+.summary h3 {
+  margin-top: 0;
+  color: #0056b3;
+}
+
+.summary p {
+  margin: 8px 0;
+  color: #333;
+}
+
+.info-message {
+  color: #17a2b8;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
