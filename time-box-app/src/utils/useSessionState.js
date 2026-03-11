@@ -92,16 +92,16 @@ export function useSessionState() {
   }, []);
 
   // Stop/reset timer
-  const resetSession = useCallback(() => {
-    setState((prev) => ({
-      ...prev,
-      currentSegment: 0,
-      remainingTime: 0,
-      isRunning: false,
-      isPaused: false,
-      completedSegments: [],
-    }));
-  }, []);
+const resetSession = useCallback(() => {
+  setState({
+    config: { ...initialConfig },
+    currentSegment: 0,
+    remainingTime: 0,
+    isRunning: false,
+    isPaused: false,
+    completedSegments: [],
+  });
+}, []);
 
   // Complete session
   const completeSession = useCallback(() => {
